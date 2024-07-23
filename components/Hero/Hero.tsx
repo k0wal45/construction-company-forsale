@@ -2,6 +2,7 @@ import { TransitionLink } from "@/utils/TransitionLink";
 import Image from "next/image";
 import React from "react";
 import { FiArrowUpRight } from "react-icons/fi";
+import AppearFromLeft from "../Animation/ApppearFromLeft";
 
 const Hero = () => {
   return (
@@ -30,29 +31,37 @@ const Hero = () => {
         }}
       >
         <div className="flex flex-col items-start justify-center gap-6">
-          <p className="subtitle">Twoje marzenia, nasza rzeczywistość</p>
-          <h1 className="text-5xl lg:text-7xl font-bold max-w-2xl">
-            Profesjonalna Budowa od Podstaw
-          </h1>
-          <p className="text-lg text-neutral-600 max-w-2xl">
-            Nasza firma specjalizuje się w kompleksowej realizacji projektów
-            budowlanych. Od planowania po finalizację, zapewniamy najwyższą
-            jakość usług i pełne zadowolenie klientów.
-          </p>
-          <div className="flex flex-wrap gap-8 items-center justify-start">
-            <TransitionLink
-              href="/o-nas"
-              className="bg-primary flex items-center gap-4  p-4 font-semibold text-xl text-white hover:scale-110 duration-300 transition-transform active:scale-90"
-            >
-              Dowiedz się więcej <FiArrowUpRight />
-            </TransitionLink>
-            <TransitionLink
-              href="/co-robimy"
-              className=" flex items-center gap-4  p-4 font-semibold text-xl text-black border-2 border-black hover:scale-110 duration-300 transition-transform active:scale-90"
-            >
-              Sprawdź co robimy <FiArrowUpRight />
-            </TransitionLink>
-          </div>
+          <AppearFromLeft>
+            <p className="subtitle">Twoje marzenia, nasza rzeczywistość</p>
+          </AppearFromLeft>
+          <AppearFromLeft>
+            <h1 className="text-5xl lg:text-7xl font-bold max-w-2xl">
+              Profesjonalna Budowa od Podstaw
+            </h1>
+          </AppearFromLeft>
+          <AppearFromLeft>
+            <p className="text-lg text-neutral-600 max-w-2xl">
+              Nasza firma specjalizuje się w kompleksowej realizacji projektów
+              budowlanych. Od planowania po finalizację, zapewniamy najwyższą
+              jakość usług i pełne zadowolenie klientów.
+            </p>
+          </AppearFromLeft>
+          <AppearFromLeft>
+            <div className="flex flex-wrap gap-8 items-center justify-start">
+              <TransitionLink
+                href="/o-nas"
+                className="bg-primary flex items-center gap-4  p-4 font-semibold text-xl text-white hover:scale-110 duration-300 transition-transform active:scale-90"
+              >
+                Dowiedz się więcej <FiArrowUpRight />
+              </TransitionLink>
+              <TransitionLink
+                href="/co-robimy"
+                className=" flex items-center gap-4  p-4 font-semibold text-xl text-black border-2 border-black hover:scale-110 duration-300 transition-transform active:scale-90"
+              >
+                Sprawdź co robimy <FiArrowUpRight />
+              </TransitionLink>
+            </div>
+          </AppearFromLeft>
         </div>
       </div>
     </header>
