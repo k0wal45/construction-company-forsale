@@ -1,16 +1,13 @@
-import Image from "next/image";
+import Contact from "@/components/Contact/Contact";
+import Map from "@/components/Map/Map";
+
 import React from "react";
 
 const page = () => {
   return (
-    <main className="bg-neutral-400">
-      <Image
-        width={1920}
-        height={1080}
-        alt=""
-        src="/img/view.jpg"
-        className="w-screen h-screen object-cover"
-      />
+    <main className="mt-36">
+      <Contact />
+      <Map />
     </main>
   );
 };
