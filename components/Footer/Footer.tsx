@@ -3,8 +3,11 @@ const Footer = () => {
   const year = date.getFullYear();
 
   return (
-    <footer className="flex w-full flex-col items-center justify-between gap-8 p-4 text-xl lg:flex-row lg:px-12 text-center bg-gray-700 text-white">
-      <p>Copyright © {year} - All right reserved</p>
+    <footer className="flex w-full flex-col items-center justify-around gap-8 p-4 lg:flex-row text-center bg-gray-700 text-white">
+      <p className="flex gap-1">
+        Copyright © <div className="text-primary">{year}</div> - All right
+        reserved
+      </p>
       <p>
         Created by:{" "}
         <a href="https://lunarisweb.pl/" className="underline">

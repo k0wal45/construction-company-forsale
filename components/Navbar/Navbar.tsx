@@ -55,9 +55,9 @@ const Navbar = () => {
           height={100}
         />
         <h2
-          className={`whitespace-nowrap text-2xl md:text-4xl font-[800] mt-[5px] transition-color duration-150 `}
+          className={`whitespace-nowrap text-2xl md:text-6xl font-bold mt-[5px] transition-color duration-150 `}
         >
-          Construction
+          Industrius
         </h2>
       </TransitionLink>
 

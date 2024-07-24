@@ -56,7 +56,7 @@ const Hero = () => {
               </TransitionLink>
               <TransitionLink
                 href="/co-robimy"
-                className=" flex items-center gap-4  p-4 font-semibold text-xl text-black border-2 border-black hover:scale-110 duration-300 transition-transform active:scale-90"
+                className=" flex items-center gap-4  p-4 font-semibold text-xl text-black border-[1px] border-black hover:scale-110 duration-300 transition-transform active:scale-90"
               >
                 Sprawdź co robimy <FiArrowUpRight />
               </TransitionLink>

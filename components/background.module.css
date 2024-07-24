@@ -1,0 +1,58 @@
+.bgV {
+  position: relative;
+  background-color: #111827;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.bgV::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-image: radial-gradient(
+    ellipse farthest-corner at 130px 100px,
+    #1e293b,
+    #1e293b 50%,
+    #111827 50%
+  );
+  background-size: 260px 200px;
+  background-repeat: repeat;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.bgDots {
+  background-color: #ffffff;
+  opacity: 1;
+  background-image: radial-gradient(#dbdbdb 3px, #ffffff 3px);
+  background-size: 18px 18px;
+}
+.bgDotsDark {
+  background-color: #111827;
+  opacity: 1;
+  background-image: radial-gradient(#1f2937 2px, #111827 2px);
+  background-size: 25px 25px;
+}
+
+.bgInsideShadow {
+  background: rgb(255, 255, 255);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.8239670868347339) 53%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.8239670868347339) 53%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.8239670868347339) 53%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+}

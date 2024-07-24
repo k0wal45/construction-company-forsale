@@ -7,8 +7,8 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Agree from "../svg/icon/Agree";
 import Barrow from "../svg/icon/Barrow";
 import Circular from "../svg/icon/Circular";
-import Roller from "../svg/icon/roller";
 import Spatula from "../svg/icon/Spatula";
+import Roller from "../svg/icon/Roller";
 
 interface Props {
   title: string;
@@ -16,8 +16,8 @@ interface Props {
   icon: any;
 }
 
-const CARD_WIDTH = 350;
-const MARGIN = 20;
+const CARD_WIDTH = 400;
+const MARGIN = 25;
 const CARD_SIZE = CARD_WIDTH + MARGIN;
 
 const BREAKPOINTS = {
@@ -73,7 +73,7 @@ const Swiper = () => {
       >
         <FaArrowLeft />
       </button>
-      <div className=" w-full max-w-6xl overflow-hidden p-4">
+      <div className=" w-full max-w-7xl overflow-hidden p-4">
         <motion.div
           animate={{
             x: offset,
