@@ -1,16 +1,16 @@
-import Image from "next/image";
+import Contact from "@/components/Contact/Contact";
+import Services from "@/components/Services/Services";
+import Team from "@/components/Team/Team";
+import Testimonials from "@/components/Testimonials/Testimonials";
 import React from "react";
 
 const page = () => {
   return (
-    <main className="bg-gray-100">
-      <Image
-        width={1920}
-        height={1080}
-        alt=""
-        src="/img/site.jpg"
-        className="w-screen h-screen object-cover"
-      />
+    <main className="mt-16">
+      <Services />
+      <Contact />
+      <Team />
+      <Testimonials />
     </main>
   );
 };

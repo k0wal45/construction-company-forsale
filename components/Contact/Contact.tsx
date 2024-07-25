@@ -4,14 +4,14 @@ import Image from "next/image";
 
 const Contact = () => {
   return (
-    <section className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 mx-auto my-24 overflow-hidden">
+    <section className="w-full max-w-7xl grid grid-cols-1 place-items-center lg:grid-cols-2 mx-auto my-24 p-4">
       <Form />
       <Image
-        width={700}
-        height={700}
+        width={900}
+        height={900}
         alt=""
-        src="/img/man.jpg"
-        className="size-full object-cover scale-[1.3] z-[-1]"
+        src="/img/blocks.jpg"
+        className="w-full object-cover aspect-square lg:scale-[1.15] z-[-1] rounded-[3rem] lg:-translate-x-6"
       />
     </section>
   );

@@ -174,7 +174,7 @@ const Form = () => {
   return (
     <Fragment>
       <form
-        className="p-8 w-full flex flex-col gap-4 flex-1 h-full bg-white rounded-br-[5rem]"
+        className="w-full flex flex-col gap-4 flex-1 h-full bg-white rounded-r-[5rem] p-8"
         onSubmit={handleSubmit}
         ref={form}
       >

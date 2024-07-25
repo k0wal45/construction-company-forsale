@@ -37,7 +37,7 @@ export const TransitionLink: React.FC<TransitionLinkProps> = ({
 
     await sleep(200);
     setOpen(false);
-    await sleep(300);
+    await sleep(500);
 
     setShowTransition(false);
   };
