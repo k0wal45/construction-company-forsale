@@ -37,12 +37,6 @@ const Card = ({
       <p className="text-neutral-600  group-hover:text-neutral-300 transition-all duration-700">
         {content.description}
       </p>
-      <TransitionLink
-        href="/co-robimy"
-        className="flex items-center pb-1 border-b-[1px] border-neutral-600 text-neutral-600 w-fit gap-2 font-semibold hover:scale-110 active:scale-95  origin-top-left group-hover:text-neutral-300 group-hover:border-neutral-300  transition-all duration-700"
-      >
-        Czytaj więcej <FaArrowRight />
-      </TransitionLink>
       <div className="absolute inset-0 bg-gradient-to-r from-neutral-800 to-neutral-900 translate-x-[-100%] group-hover:translate-x-[0%] transition-all duration-700 z-[-1]" />
     </div>
   );
